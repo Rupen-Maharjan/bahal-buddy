@@ -9,3 +9,7 @@
 body{
   @apply bg-[#FAF9F6];
 }
+
+button{
+  @apply hover:cursor-pointer
+}

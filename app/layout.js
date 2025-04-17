@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Rent Spaces",
+  title: "Bahaal Buddy",
   description: "Designed and developed for yur convinience",
 };
 

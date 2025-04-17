@@ -1,5 +1,5 @@
 'use client'
-import Image from "next/image";
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const headerVariants = {
@@ -16,26 +16,19 @@ const LHeader = () => {
         animate="visible"
         variants={headerVariants}
       >
-        <div className="relative flex items-center">
-          <div className="absolute -left-32 lg:-left-44 w-52 h-52">
-            <Image src="/home-logo.gif" alt="alt" width={50} height={50}  layout="responsive"/>
+        <div className="container relative z-10 flex flex-col items-center justify-center py-24 text-center md:py-32">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+              Find Your Perfect <span className="text-primary">Rental</span> Space
+            </h1>
+            <p className="mt-6 max-w-[600px] text-muted-foreground md:text-xl">
+              Discover and rent properties with ease. Whether you're looking for a room, apartment, or commercial space,
+              we've got you covered.
+            </p>
+
+            <Link href={'/signup'} className="mt-10 inline-flex items-center justify-center px-4 lg:px-8 py-2 lg:py-4 font-sans font-semibold tracking-wide text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-full lg:h-[60px] shadow-md">
+            Get started
+          </Link>
           </div>
-          <h1 className="text-3xl lg:text-6xl font-bold tracking-wider text-center w-[20rem] lg:w-[45rem]">
-            Discover the perfect space for your needs
-          </h1>
-        </div>
-        <div className="flex gap-5">
-          <input
-            type="text"
-            id="id"
-            name="location"
-            placeholder="Location"
-            className="w-[300px] border border-slate-200 rounded-full py-1.5 lg:py-3 px-2.5 lg:px-5 outline-none bg-transparent shadow-md"
-          />
-          <button className="inline-flex items-center justify-center px-4 lg:px-8 py-2 lg:py-4 font-sans font-semibold tracking-wide text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-full lg:h-[60px] shadow-md">
-            Search
-          </button>
-        </div>
       </motion.div>
     </header>
   );

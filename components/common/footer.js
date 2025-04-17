@@ -7,10 +7,9 @@ const Footer = ()=> {
       <div className="container px-4 py-8 mx-auto md:py-12">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2">
-              <Building className="w-6 h-6 text-primary" />
-              <span className="text-xl font-bold">Rent Spaces</span>
-            </Link>
+            <h3 className="flex items-center gap-2">
+              <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Bahaal Buddy</span>
+            </h3>
             <p className="text-sm text-gray-500">
               Find your perfect space to rent, from rooms and apartments to
               commercial properties.
