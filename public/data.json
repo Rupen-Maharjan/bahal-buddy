@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "img": "/home.jpg",
+    "location": "Kathmandu, Nepal",
+    "rating": 4,
+    "about": "A cozy home near the city center."
+  },
+  {
+    "id": 2,
+    "img": "/house.jpg",
+    "location": "Pokhara, Nepal",
+    "rating": 5,
+    "about": "Beautiful lakeside house with modern interiors."
+  },
+  {
+    "id": 3,
+    "img": "/houses.jpg",
+    "location": "Lalitpur, Nepal",
+    "rating": 3,
+    "about": "Affordable apartments with modern design."
+  },
+  {
+    "id": 4,
+    "img": "/room.jpg",
+    "location": "Bhaktapur, Nepal",
+    "rating": 4,
+    "about": "Spacious rooms with traditional architecture."
+  },
+  {
+    "id": 5,
+    "img": "/appartment.jpg",
+    "location": "Chitwan, Nepal",
+    "rating": 5,
+    "about": "Luxury apartment surrounded by greenery."
+  },
+  {
+    "id": 6,
+    "img": "/commercial.jpg",
+    "location": "Butwal, Nepal",
+    "rating": 2,
+    "about": "Small commercial property ideal for startups."
+  },
+  {
+    "id": 7,
+    "img": "/home.jpg",
+    "location": "Dharan, Nepal",
+    "rating": 4,
+    "about": "Modern duplex home with garden space."
+  },
+  {
+    "id": 8,
+    "img": "/house.jpg",
+    "location": "Biratnagar, Nepal",
+    "rating": 3,
+    "about": "Family house located near markets and schools."
+  },
+  {
+    "id": 9,
+    "img": "/houses.jpg",
+    "location": "Janakpur, Nepal",
+    "rating": 4,
+    "about": "Charming neighborhood property close to Janaki Temple."
+  },
+  {
+    "id": 10,
+    "img": "/room.jpg",
+    "location": "Hetauda, Nepal",
+    "rating": 5,
+    "about": "Luxury rooms with mountain views."
+  }
+]

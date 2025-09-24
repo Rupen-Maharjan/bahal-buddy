@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const Navbar = () => {
   // Example state; you might use a context or other state management for authentication
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const pathname = usePathname();
 
   return (
@@ -15,9 +15,9 @@ const Navbar = () => {
       <div className="flex flex-col">
         <div className="flex items-center justify-between w-[90%] mx-auto py-3">
           <Logo />
+          <SearchBar />
           {isLoggedIn ? (
             <>
-              <SearchBar />
               <UserMenu isLoggedIn={isLoggedIn} />
             </>
           ) : (
