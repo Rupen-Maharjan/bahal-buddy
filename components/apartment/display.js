@@ -1,18 +1,24 @@
 'use client';
-import React from 'react'
-import PropertyCard from '../common/propertyCard'
+import React, { useEffect, useState } from 'react';
+import PropertyCard from '../common/propertyCard';
 
-const section = () => {
-  const data = [...Array(10)];
+const Section = () => {
+  const [properties, setProperties] = useState([]);
+
+  useEffect(() => {
+    fetch('/data.json') // fetch from public/data.json
+      .then((res) => res.json())
+      .then((data) => setProperties(data))
+      .catch((err) => console.error("Failed to load data.json", err));
+  }, []);
+
   return (
-    
-        <div className=" grid-cols-4 gap-x-8 gap-y-24 grid">
-          {data.map((item) => (
-              <PropertyCard key={item} img={'/appartment.jpg'}/>
-            
-          ))}
-        </div>
-  )
-}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pt-20">
+      {properties.map((property) => (
+        <PropertyCard key={property.id} property={property} />
+      ))}
+    </div>
+  );
+};
 
-export default section
+export default Section
